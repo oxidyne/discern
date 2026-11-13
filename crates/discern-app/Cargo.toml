@@ -1,0 +1,19 @@
+[package]
+name = "discern-app"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+discern-core.workspace = true
+discern-ui.workspace = true
+gpui.workspace = true
+gpui_platform.workspace = true
+
+[[bin]]
+name = "discern"
+path = "src/main.rs"
