@@ -51,7 +51,7 @@ Entrée utilisateur → Command → Workspace/Document (état) → notification 
 - Profil `dev` en `opt-level = 1` (dépendances en 3) : l'UI est inutilisable à 0.
 - Profil `release` : LTO thin, `codegen-units = 1`.
 - `unsafe_code = "forbid"` au niveau du workspace.
-- `default-members` exclut le crate UI : `cargo test` reste rapide sans compiler GPUI.
+- `default-members` inclut l'app : `cargo run` fonctionne à la racine. `cargo test -p discern-core` (ou text/sql/db) reste rapide sans compiler GPUI.
 
 ## Ajouts prévus (par ordre)
 
@@ -64,6 +64,6 @@ Entrée utilisateur → Command → Workspace/Document (état) → notification 
 ## Commandes
 
 ```bash
-cargo test                 # crates headless uniquement
-cargo run -p discern-app   # lance l'application
+cargo run                  # lance l'application
+cargo test -p discern-sql    # tests headless, sans GPUI
 ```

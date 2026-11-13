@@ -10,4 +10,4 @@ workspace = true
 
 [dependencies]
 discern-core.workspace = true
-gpui.workspace = true
+gpui-kit.workspace = true

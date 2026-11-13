@@ -11,8 +11,7 @@ workspace = true
 [dependencies]
 discern-core.workspace = true
 discern-ui.workspace = true
-gpui.workspace = true
-gpui_platform.workspace = true
+gpui-kit.workspace = true
 
 [[bin]]
 name = "discern"

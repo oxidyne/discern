@@ -1,7 +1,7 @@
 [workspace]
 resolver = "3"
 members = ["crates/*"]
-default-members = ["crates/discern-text", "crates/discern-sql", "crates/discern-db", "crates/discern-core"]
+default-members = ["crates/discern-text", "crates/discern-sql", "crates/discern-db", "crates/discern-core", "crates/discern-app"]
 
 [workspace.package]
 version = "0.1.0"
@@ -18,12 +18,11 @@ discern-core = { path = "crates/discern-core" }
 discern-ui = { path = "crates/discern-ui" }
 
 # external
-ropey = "1.6"
-thiserror = "2"
-async-trait = "0.1"
-futures-core = "0.3"
-gpui = { git = "https://github.com/zed-industries/zed" }
-gpui_platform = { git = "https://github.com/zed-industries/zed", features = ["font-kit"] }
+ropey = "=1.6.1"
+thiserror = "=2.0.21"
+async-trait = "=0.1.92"
+futures-core = "=0.3.34"
+gpui-kit = "=0.9.1"
 
 [workspace.lints.rust]
 unsafe_code = "forbid"
